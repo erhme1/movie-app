@@ -5,7 +5,7 @@ export const Pagination = ({}) => {
     const pathName = usePathname();
     const searchParams = useSearchParams();
     const router = useRouter();
-    //https://localhost:3000/popular?language=en-US&page=2
+    // https://localhost:3000/popular?language=en-US&page=2
 
     const onChangePage = (newPage: number) => {
         const newSearchParams = new URLSearchParams(searchParams.toString());
