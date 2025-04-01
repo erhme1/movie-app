@@ -31,7 +31,7 @@ export default function Page(){
             <h1 className="font-bold">{Params.category}</h1>
             <div className="p-4 grid gap-4 grid-cols-2 md:grid-cols-3 lg:gird-cols-5 lg:px-10">
                 {movies?.map((movie) => (
-                    <MovieCard movie={movie} />
+                    <MovieCard key={movie.id} movie={movie} />
                 ))}
             </div>
             <Pagination />
